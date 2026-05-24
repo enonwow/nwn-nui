@@ -1,0 +1,10 @@
+﻿{
+    "generated_at":  "2026-05-24T15:53:25",
+    "mode":  "capture_only",
+    "test":  "nuiedgecons",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuiedgecons/app_nuiedgecons_clamped.png",
+                     "tests/app/nuiedgecons/app_nuiedgecons_full.png"
+                 ]
+}

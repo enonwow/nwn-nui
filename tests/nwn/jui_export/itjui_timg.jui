@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "title": "ITNWN Image Target",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "image",
+        "label": null,
+        "value": "ir_follow",
+        "image_aspect": 0,
+        "image_halign": 0,
+        "image_valign": 0,
+        "width": 96.0,
+        "height": 96.0,
+        "id": "img_baseline"
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 600,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

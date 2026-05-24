@@ -1,0 +1,9 @@
+﻿{
+    "generated_at":  "2026-05-24T15:53:50",
+    "mode":  "capture_only",
+    "test":  "nuiimgregion",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuiimgregion/app_nuiimgregion.png"
+                 ]
+}

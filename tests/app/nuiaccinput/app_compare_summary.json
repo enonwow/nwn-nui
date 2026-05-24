@@ -1,0 +1,11 @@
+﻿{
+    "generated_at":  "2026-05-24T15:52:06",
+    "mode":  "capture_only",
+    "test":  "nuiaccinput",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuiaccinput/app_nuiaccinput_idle.png",
+                     "tests/app/nuiaccinput/app_nuiaccinput_input_off.png",
+                     "tests/app/nuiaccinput/app_nuiaccinput_probe_click.png"
+                 ]
+}

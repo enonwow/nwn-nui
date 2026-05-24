@@ -1,0 +1,9 @@
+﻿{
+    "generated_at":  "2026-05-24T15:52:09",
+    "mode":  "capture_only",
+    "test":  "nuiaspect",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuiaspect/app_nuiaspect.png"
+                 ]
+}

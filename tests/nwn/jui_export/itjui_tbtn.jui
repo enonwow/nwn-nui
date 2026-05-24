@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "title": "ITNWN Button Target",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "button",
+        "label": "Baseline Button",
+        "id": "btn_baseline"
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 600,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

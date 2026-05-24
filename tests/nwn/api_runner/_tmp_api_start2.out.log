@@ -1,0 +1,5 @@
+TLS cert/key already present: cert=C:\Projects\nwn-last-city\NUI\tests\nwn\api_runner\certs\itnwn_api_localhost.crt key=C:\Projects\nwn-last-city\NUI\tests\nwn\api_runner\certs\itnwn_api_localhost.key
+Starting ITNWN API runner host=127.0.0.1 port=51871 nssOverwriteMode=force
+Bind host=0.0.0.0
+TLS cert=C:\Projects\nwn-last-city\NUI\tests\nwn\api_runner\certs\itnwn_api_localhost.crt
+TLS key=C:\Projects\nwn-last-city\NUI\tests\nwn\api_runner\certs\itnwn_api_localhost.key

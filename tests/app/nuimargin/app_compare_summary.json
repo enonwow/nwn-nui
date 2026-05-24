@@ -1,0 +1,9 @@
+﻿{
+    "generated_at":  "2026-05-24T15:54:12",
+    "mode":  "capture_only",
+    "test":  "nuimargin",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuimargin/app_nuimargin.png"
+                 ]
+}

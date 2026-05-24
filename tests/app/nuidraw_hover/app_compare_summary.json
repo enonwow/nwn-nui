@@ -1,0 +1,11 @@
+﻿{
+    "generated_at":  "2026-05-24T15:52:59",
+    "mode":  "capture_only",
+    "test":  "nuidraw_hover",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuidraw_hover/app_nuidraw_hover_hover.png",
+                     "tests/app/nuidraw_hover/app_nuidraw_hover_off.png",
+                     "tests/app/nuidraw_hover/app_nuidraw_hover_pressed.png"
+                 ]
+}

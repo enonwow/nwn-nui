@@ -1,0 +1,9 @@
+﻿{
+    "generated_at":  "2026-05-24T15:52:28",
+    "mode":  "capture_only",
+    "test":  "nuichart",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuichart/app_nuichart.png"
+                 ]
+}

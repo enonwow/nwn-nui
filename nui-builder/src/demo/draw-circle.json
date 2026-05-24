@@ -1,0 +1,57 @@
+﻿{
+  "order": 73,
+  "id": "draw-circle",
+  "name": "DrawList Circle",
+  "description": "NuiDrawListCircle with fill and stroke.",
+  "tags": ["drawlist", "circle", "overlay"],
+  "jui": {
+    "version": 1,
+    "title": "DrawList Circle Demo",
+    "geometry": { "x": -1.0, "y": -1.0, "w": 540.0, "h": 360.0 },
+    "resizable": false,
+    "collapsed": false,
+    "closable": true,
+    "transparent": false,
+    "border": true,
+    "accepts_input": true,
+    "size_constraint": null,
+    "edge_constraint": null,
+    "font": "",
+    "root": {
+      "type": "col",
+      "children": [
+        { "type": "label", "value": "NuiDrawListCircle (ORDER_AFTER)", "margin": 6.0 },
+        {
+          "type": "group",
+          "border": true,
+          "scrollbars": "NUI_SCROLLBARS_NONE",
+          "width": 500.0,
+          "height": 260.0,
+          "draw_list_scissor": true,
+          "draw_list": [
+            {
+              "type": "NUI_DRAW_LIST_ITEM_TYPE_CIRCLE",
+              "enabled": true,
+              "color": { "r": 255, "g": 196, "b": 102, "a": 255 },
+              "fill": true,
+              "line_thickness": 2.0,
+              "rect": { "x": 130.0, "y": 40.0, "w": 220.0, "h": 180.0 },
+              "order": "NUI_DRAW_LIST_ITEM_ORDER_AFTER",
+              "render": "NUI_DRAW_LIST_ITEM_RENDER_ALWAYS",
+              "arrayBinds": false
+            }
+          ],
+          "children": [
+            {
+              "type": "col",
+              "children": [
+                { "type": "label", "value": "Host widget: NuiGroup", "margin": 8.0 },
+                { "type": "spacer" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

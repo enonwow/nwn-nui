@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "title": "ITNWN Draw Text Target",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "group",
+        "label": null,
+        "value": null,
+        "border": true,
+        "scrollbars": 0,
+        "width": 520.0,
+        "height": 420.0,
+        "draw_list_scissor": true,
+        "draw_list": [
+          {
+            "type": 4,
+            "enabled": true,
+            "color": {
+              "r": 120,
+              "g": 200,
+              "b": 255,
+              "a": 255
+            },
+            "fill": null,
+            "line_thickness": null,
+            "rect": {
+              "x": 120.0,
+              "y": 180.0,
+              "w": 300.0,
+              "h": 60.0
+            },
+            "text": "DrawList Text",
+            "font": "",
+            "order": 1,
+            "render": 0,
+            "arrayBinds": false
+          }
+        ],
+        "children": [
+          {
+            "type": "spacer",
+            "label": null,
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 600,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

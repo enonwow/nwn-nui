@@ -1,0 +1,10 @@
+﻿{
+    "generated_at":  "2026-05-24T15:54:46",
+    "mode":  "capture_only",
+    "test":  "nuioptions",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuioptions/app_nuioptions_selected_a.png",
+                     "tests/app/nuioptions/app_nuioptions_selected_b.png"
+                 ]
+}

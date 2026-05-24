@@ -1,0 +1,34 @@
+﻿{
+  "version": 1,
+  "title": "Custom P1 - TableHeaderRow",
+  "geometry": { "x": -1.0, "y": -1.0, "w": 640.0, "h": 260.0 },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": "",
+  "root": {
+    "type": "col",
+    "children": [
+      {
+        "type": "row",
+        "children": [
+          { "type": "button", "label": "Quest ▲", "id": "hdr_sort_quest", "width": 260.0 },
+          { "type": "button", "label": "Progress", "id": "hdr_sort_progress", "width": 170.0 },
+          { "type": "button", "label": "Action", "id": "hdr_sort_action", "width": 110.0 }
+        ]
+      },
+      { "type": "spacer", "height": 8.0 },
+      {
+        "type": "text",
+        "value": "Header-only integration test for sortable table columns.",
+        "border": true,
+        "scrollbars": "NUI_SCROLLBARS_NONE"
+      }
+    ]
+  }
+}

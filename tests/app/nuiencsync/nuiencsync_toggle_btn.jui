@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "title": "NuiEncouraged Sync - Toggle Button",
+  "geometry": { "x": -1.0, "y": -1.0, "w": 760.0, "h": 260.0 },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": "",
+  "root": {
+    "type": "col",
+    "children": [
+      {
+        "type": "label",
+        "value": "Single button toggle: click once to enable encouraged pulse, click same again to disable."
+      },
+      { "type": "spacer", "height": 10.0 },
+      {
+        "type": "row",
+        "children": [
+          { "type": "spacer" },
+          {
+            "type": "button",
+            "label": "Toggle Encouraged",
+            "id": "encToggleBtn",
+            "encouraged": { "bind": "enc_toggle_btn", "number_flags": 0, "number_precision": 0, "text_flags": 0 },
+            "width": 260.0,
+            "height": 36.0
+          },
+          { "type": "spacer" }
+        ]
+      },
+      { "type": "spacer", "height": 8.0 },
+      {
+        "type": "label",
+        "value": "Expected: click #1 -> pulse ON, click #2 -> pulse OFF, click #3 -> pulse ON."
+      }
+    ]
+  }
+}

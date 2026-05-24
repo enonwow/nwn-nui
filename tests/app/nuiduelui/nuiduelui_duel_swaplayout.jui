@@ -1,0 +1,808 @@
+{
+  "version": 1,
+  "title": false,
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 900,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": false,
+  "transparent": true,
+  "border": false,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": "",
+  "root": {
+    "type": "col",
+    "draw_list_scissor": false,
+    "children": [
+      {
+        "type": "col",
+        "children": [
+          {
+            "type": "spacer",
+            "height": 34
+          },
+          {
+            "type": "row",
+            "children": [
+              {
+                "type": "spacer",
+                "width": 794
+              },
+              {
+                "type": "button",
+                "id": "it_duel_close",
+                "label": "X",
+                "width": 18,
+                "height": 28
+              }
+            ]
+          },
+          {
+            "type": "row",
+            "children": [
+              {
+                "type": "spacer",
+                "height": 36
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "col",
+        "draw_list_scissor": false,
+        "draw_list": [
+          {
+            "type": 5,
+            "enabled": true,
+            "image": "it_duel_bg",
+            "image_aspect": 1,
+            "image_halign": 0,
+            "image_valign": 0,
+            "rect": {
+              "x": 20,
+              "y": 0,
+              "w": 860,
+              "h": 560
+            },
+            "order": -1,
+            "render": 0,
+            "arrayBinds": false
+          }
+        ],
+        "children": [
+          {
+            "type": "spacer",
+            "height": 14
+          },
+          {
+            "type": "row",
+            "children": [
+              {
+                "type": "spacer",
+                "width": 330
+              },
+              {
+                "type": "label",
+                "value": "Honor: -92",
+                "text_halign": 1,
+                "text_valign": 0,
+                "width": 148
+              },
+              {
+                "type": "spacer",
+                "width": 54
+              },
+              {
+                "type": "label",
+                "value": "W: 12 / L: 12",
+                "text_halign": 1,
+                "text_valign": 0,
+                "width": 170
+              },
+              {
+                "type": "spacer"
+              }
+            ]
+          },
+          {
+            "type": "spacer",
+            "height": 9
+          },
+          {
+            "type": "row",
+            "children": [
+              {
+                "type": "spacer",
+                "width": 324
+              },
+              {
+                "type": "button_image",
+                "id": "it_duel_tab_challenge",
+                "label": "duel_ico_sword",
+                "width": 38,
+                "height": 38
+              },
+              {
+                "type": "spacer",
+                "width": 70
+              },
+              {
+                "type": "button_image",
+                "id": "it_duel_tab_log",
+                "label": "duel_ico_book",
+                "encouraged": {
+                  "bind": "it_duel_enc_log",
+                  "number_flags": 0,
+                  "number_precision": 0,
+                  "text_flags": 0
+                },
+                "width": 38,
+                "height": 38
+              },
+              {
+                "type": "spacer",
+                "width": 70
+              },
+              {
+                "type": "button_image",
+                "id": "it_duel_tab_rank",
+                "label": "duel_ico_cup",
+                "encouraged": {
+                  "bind": "it_duel_enc_rank",
+                  "number_flags": 0,
+                  "number_precision": 0,
+                  "text_flags": 0
+                },
+                "width": 38,
+                "height": 38
+              },
+              {
+                "type": "spacer"
+              }
+            ]
+          },
+          {
+            "type": "spacer",
+            "height": 14
+          },
+          {
+            "type": "row",
+            "children": [
+              {
+                "type": "spacer",
+                "width": 132
+              },
+              {
+                "type": "group",
+                "id": "it_duel_swap_main",
+                "swap_id": "it_duel_swap_main",
+                "swap_routes": [
+                  "it_duel_tab_log",
+                  "it_duel_tab_rank"
+                ],
+                "swap_views": [
+                  {
+                    "type": "list",
+                    "row_template": [
+                      [
+                        {
+                          "type": "label",
+                          "value": {
+                            "bind": "duel_hist_col_a",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "width": 240,
+                          "foreground_color": {
+                            "bind": "duel_hist_color",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "text_halign": "NUI_HALIGN_LEFT",
+                          "text_valign": "NUI_VALIGN_MIDDLE"
+                        },
+                        240,
+                        true
+                      ],
+                      [
+                        {
+                          "type": "label",
+                          "value": {
+                            "bind": "duel_hist_col_b",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "width": 228,
+                          "foreground_color": {
+                            "bind": "duel_hist_color",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "text_halign": "NUI_HALIGN_LEFT",
+                          "text_valign": "NUI_VALIGN_MIDDLE"
+                        },
+                        228,
+                        true
+                      ],
+                      [
+                        {
+                          "type": "label",
+                          "value": {
+                            "bind": "duel_hist_col_c",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "width": 102,
+                          "foreground_color": {
+                            "bind": "duel_hist_color",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "text_halign": "NUI_HALIGN_RIGHT",
+                          "text_valign": "NUI_VALIGN_MIDDLE"
+                        },
+                        102,
+                        false
+                      ],
+                      [
+                        {
+                          "type": "spacer"
+                        },
+                        12,
+                        false
+                      ]
+                    ],
+                    "row_count": {
+                      "bind": "duel_hist_row_count",
+                      "number_flags": 0,
+                      "number_precision": 0,
+                      "text_flags": 0
+                    },
+                    "row_height": 25,
+                    "border": true,
+                    "scrollbars": 2,
+                    "width": 626,
+                    "height": 370,
+                    "preview_binds": {
+                      "duel_hist_col_a": [
+                        "Defeat by Enon Duel",
+                        "Defeat by Enon Duel",
+                        "Declined with Enon Duel",
+                        "Declined with Grannith Undt",
+                        "Defeat by Grannith Undt",
+                        "Declined with Grannith Undt",
+                        "Defeat by Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Defeat by Grannith Undt"
+                      ],
+                      "duel_hist_col_b": [
+                        "By killing blow",
+                        "By fleeing",
+                        "By decline",
+                        "By decline",
+                        "By killing blow",
+                        "By decline",
+                        "By fleeing",
+                        "By killing blow",
+                        "By fleeing",
+                        "By fleeing",
+                        "By fleeing",
+                        "By fleeing",
+                        "By fleeing",
+                        "By fleeing"
+                      ],
+                      "duel_hist_col_c": [
+                        "30.04 13:16",
+                        "30.04 13:16",
+                        "30.04 13:14",
+                        "30.04 13:08",
+                        "30.04 13:08",
+                        "30.04 13:06",
+                        "30.04 13:06",
+                        "30.04 12:57",
+                        "30.04 12:56",
+                        "30.04 12:48",
+                        "30.04 12:46",
+                        "30.04 12:45",
+                        "30.04 12:44",
+                        "30.04 12:31"
+                      ],
+                      "duel_hist_row_count": 14,
+                      "duel_hist_color": [
+                        {
+                          "r": 228,
+                          "g": 86,
+                          "b": 86,
+                          "a": 255
+                        },
+                        {
+                          "r": 228,
+                          "g": 86,
+                          "b": 86,
+                          "a": 255
+                        },
+                        {
+                          "r": 190,
+                          "g": 190,
+                          "b": 190,
+                          "a": 255
+                        },
+                        {
+                          "r": 190,
+                          "g": 190,
+                          "b": 190,
+                          "a": 255
+                        },
+                        {
+                          "r": 228,
+                          "g": 86,
+                          "b": 86,
+                          "a": 255
+                        },
+                        {
+                          "r": 190,
+                          "g": 190,
+                          "b": 190,
+                          "a": 255
+                        },
+                        {
+                          "r": 228,
+                          "g": 86,
+                          "b": 86,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 228,
+                          "g": 86,
+                          "b": 86,
+                          "a": 255
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "list",
+                    "row_template": [
+                      [
+                        {
+                          "type": "label",
+                          "value": {
+                            "bind": "duel_rank_col_a",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "width": 220,
+                          "foreground_color": {
+                            "bind": "duel_rank_color",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "text_halign": "NUI_HALIGN_LEFT",
+                          "text_valign": "NUI_VALIGN_MIDDLE"
+                        },
+                        220,
+                        true
+                      ],
+                      [
+                        {
+                          "type": "label",
+                          "value": {
+                            "bind": "duel_rank_col_b",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "width": 280,
+                          "foreground_color": {
+                            "bind": "duel_rank_color",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "text_halign": "NUI_HALIGN_LEFT",
+                          "text_valign": "NUI_VALIGN_MIDDLE"
+                        },
+                        280,
+                        true
+                      ],
+                      [
+                        {
+                          "type": "label",
+                          "value": {
+                            "bind": "duel_rank_col_c",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "width": 100,
+                          "foreground_color": {
+                            "bind": "duel_rank_color",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "text_halign": "NUI_HALIGN_RIGHT",
+                          "text_valign": "NUI_VALIGN_MIDDLE"
+                        },
+                        100,
+                        false
+                      ],
+                      [
+                        {
+                          "type": "spacer"
+                        },
+                        18,
+                        false
+                      ]
+                    ],
+                    "row_count": {
+                      "bind": "duel_rank_row_count",
+                      "number_flags": 0,
+                      "number_precision": 0,
+                      "text_flags": 0
+                    },
+                    "row_height": 28,
+                    "border": true,
+                    "scrollbars": 2,
+                    "width": 626,
+                    "height": 370,
+                    "preview_binds": {
+                      "duel_rank_col_a": [
+                        "1. Enon Duel",
+                        "2. Gar Mamm",
+                        "3. Avri Email",
+                        "4. Avri Email",
+                        "5. Grannith Undt"
+                      ],
+                      "duel_rank_col_b": [
+                        "W: 2 (1K/1F) | L: 0 (0K/0F)",
+                        "W: 1 (1K/0F) | L: 0 (0K/0F)",
+                        "W: 0 (0K/0F) | L: 1 (1K/0F)",
+                        "W: 12 (2K/10F) | L: 12 (4K/8F)",
+                        "W: 10 (3K/7F) | L: 12 (2K/10F)"
+                      ],
+                      "duel_rank_col_c": [
+                        "Honor 20",
+                        "Honor 10",
+                        "Honor -3",
+                        "Honor -92",
+                        "Honor -156"
+                      ],
+                      "duel_rank_row_count": 5,
+                      "duel_rank_color": [
+                        {
+                          "r": 245,
+                          "g": 224,
+                          "b": 76,
+                          "a": 255
+                        },
+                        {
+                          "r": 220,
+                          "g": 220,
+                          "b": 220,
+                          "a": 255
+                        },
+                        {
+                          "r": 230,
+                          "g": 157,
+                          "b": 55,
+                          "a": 255
+                        },
+                        {
+                          "r": 220,
+                          "g": 220,
+                          "b": 220,
+                          "a": 255
+                        },
+                        {
+                          "r": 220,
+                          "g": 220,
+                          "b": 220,
+                          "a": 255
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "border": false,
+                "scrollbars": 0,
+                "width": 626,
+                "height": 370,
+                "children": [
+                  {
+                    "type": "list",
+                    "row_template": [
+                      [
+                        {
+                          "type": "label",
+                          "value": {
+                            "bind": "duel_hist_col_a",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "width": 240,
+                          "foreground_color": {
+                            "bind": "duel_hist_color",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "text_halign": "NUI_HALIGN_LEFT",
+                          "text_valign": "NUI_VALIGN_MIDDLE"
+                        },
+                        240,
+                        true
+                      ],
+                      [
+                        {
+                          "type": "label",
+                          "value": {
+                            "bind": "duel_hist_col_b",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "width": 228,
+                          "foreground_color": {
+                            "bind": "duel_hist_color",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "text_halign": "NUI_HALIGN_LEFT",
+                          "text_valign": "NUI_VALIGN_MIDDLE"
+                        },
+                        228,
+                        true
+                      ],
+                      [
+                        {
+                          "type": "label",
+                          "value": {
+                            "bind": "duel_hist_col_c",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "width": 102,
+                          "foreground_color": {
+                            "bind": "duel_hist_color",
+                            "number_flags": 0,
+                            "number_precision": 0,
+                            "text_flags": 0
+                          },
+                          "text_halign": "NUI_HALIGN_RIGHT",
+                          "text_valign": "NUI_VALIGN_MIDDLE"
+                        },
+                        102,
+                        false
+                      ],
+                      [
+                        {
+                          "type": "spacer"
+                        },
+                        12,
+                        false
+                      ]
+                    ],
+                    "row_count": {
+                      "bind": "duel_hist_row_count",
+                      "number_flags": 0,
+                      "number_precision": 0,
+                      "text_flags": 0
+                    },
+                    "row_height": 25,
+                    "border": true,
+                    "scrollbars": 2,
+                    "width": 626,
+                    "height": 370,
+                    "preview_binds": {
+                      "duel_hist_col_a": [
+                        "Defeat by Enon Duel",
+                        "Defeat by Enon Duel",
+                        "Declined with Enon Duel",
+                        "Declined with Grannith Undt",
+                        "Defeat by Grannith Undt",
+                        "Declined with Grannith Undt",
+                        "Defeat by Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Victory over Grannith Undt",
+                        "Defeat by Grannith Undt"
+                      ],
+                      "duel_hist_col_b": [
+                        "By killing blow",
+                        "By fleeing",
+                        "By decline",
+                        "By decline",
+                        "By killing blow",
+                        "By decline",
+                        "By fleeing",
+                        "By killing blow",
+                        "By fleeing",
+                        "By fleeing",
+                        "By fleeing",
+                        "By fleeing",
+                        "By fleeing",
+                        "By fleeing"
+                      ],
+                      "duel_hist_col_c": [
+                        "30.04 13:16",
+                        "30.04 13:16",
+                        "30.04 13:14",
+                        "30.04 13:08",
+                        "30.04 13:08",
+                        "30.04 13:06",
+                        "30.04 13:06",
+                        "30.04 12:57",
+                        "30.04 12:56",
+                        "30.04 12:48",
+                        "30.04 12:46",
+                        "30.04 12:45",
+                        "30.04 12:44",
+                        "30.04 12:31"
+                      ],
+                      "duel_hist_row_count": 14,
+                      "duel_hist_color": [
+                        {
+                          "r": 228,
+                          "g": 86,
+                          "b": 86,
+                          "a": 255
+                        },
+                        {
+                          "r": 228,
+                          "g": 86,
+                          "b": 86,
+                          "a": 255
+                        },
+                        {
+                          "r": 190,
+                          "g": 190,
+                          "b": 190,
+                          "a": 255
+                        },
+                        {
+                          "r": 190,
+                          "g": 190,
+                          "b": 190,
+                          "a": 255
+                        },
+                        {
+                          "r": 228,
+                          "g": 86,
+                          "b": 86,
+                          "a": 255
+                        },
+                        {
+                          "r": 190,
+                          "g": 190,
+                          "b": 190,
+                          "a": 255
+                        },
+                        {
+                          "r": 228,
+                          "g": 86,
+                          "b": 86,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 94,
+                          "g": 214,
+                          "b": 124,
+                          "a": 255
+                        },
+                        {
+                          "r": 228,
+                          "g": 86,
+                          "b": 86,
+                          "a": 255
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "spacer"
+              }
+            ]
+          },
+          {
+            "type": "spacer"
+          }
+        ]
+      }
+    ]
+  }
+}

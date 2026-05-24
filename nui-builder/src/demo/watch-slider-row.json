@@ -1,0 +1,69 @@
+{
+  "order": 40,
+  "id": "watch-slider-row",
+  "name": "Watch Slider Row",
+  "description": "Reusable slider row with live value label and apply/reset actions.",
+  "tags": ["slider", "watch", "bind", "row", "controls"],
+  "jui": {
+    "version": 1,
+    "title": "Volume Control",
+    "geometry": { "x": -1.0, "y": -1.0, "w": 560.0, "h": 220.0 },
+    "resizable": false,
+    "collapsed": false,
+    "closable": true,
+    "transparent": false,
+    "border": true,
+    "accepts_input": true,
+    "size_constraint": null,
+    "edge_constraint": null,
+    "font": "",
+    "root": {
+      "type": "col",
+      "children": [
+        { "type": "label", "value": "Master Volume" },
+        {
+          "type": "row",
+          "children": [
+            {
+              "type": "sliderf",
+              "id": "sldVolume",
+              "value": { "bind": "volume_value", "number_precision": 2 },
+              "min": 0.0,
+              "max": 1.0,
+              "step": 0.05,
+              "width": 340
+            },
+            {
+              "type": "label",
+              "value": { "bind": "volume_label", "text_flags": 0 },
+              "width": 120,
+              "text_halign": "NUI_HALIGN_RIGHT",
+              "text_valign": "NUI_VALIGN_MIDDLE"
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "children": [
+            { "type": "button", "id": "btnApplyVolume", "label": "Apply" },
+            { "type": "button", "id": "btnResetVolume", "label": "Reset" },
+            { "type": "spacer" }
+          ]
+        },
+        {
+          "type": "row",
+          "children": [
+            { "type": "spacer" },
+            {
+              "type": "label",
+              "value": { "bind": "volume_hint" },
+              "text_halign": "NUI_HALIGN_RIGHT",
+              "text_valign": "NUI_VALIGN_MIDDLE",
+              "width": 280
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

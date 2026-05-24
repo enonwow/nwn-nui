@@ -1,0 +1,14 @@
+﻿{
+    "generated_at":  "2026-05-24T15:55:27",
+    "mode":  "capture_only",
+    "test":  "nuitoggles",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuitoggles/app_nuitoggles_fail_json_type.png",
+                     "tests/app/nuitoggles/app_nuitoggles_fail_layout_1.png",
+                     "tests/app/nuitoggles/app_nuitoggles_fail_layout_2.png",
+                     "tests/app/nuitoggles/app_nuitoggles_tab_a.png",
+                     "tests/app/nuitoggles/app_nuitoggles_tab_b.png",
+                     "tests/app/nuitoggles/app_nuitoggles_tab_c.png"
+                 ]
+}

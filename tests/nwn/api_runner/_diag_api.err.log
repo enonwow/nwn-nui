@@ -1,0 +1,2 @@
+C:\Projects\nwn-last-city\NUI\tests\nwn\api_runner\itnwn_api_server.py:1452: DeprecationWarning: ssl.TLSVersion.TLSv1 is deprecated
+  tls_context.minimum_version = ssl.TLSVersion.TLSv1

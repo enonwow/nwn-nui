@@ -1,0 +1,50 @@
+# Build outputs
+/dist/
+/build/
+/.cache/
+/.tmp/
+/tmp/
+nui-builder/dist/
+
+# Node dependencies
+/node_modules/
+**/node_modules/
+
+# Test outputs and artifacts
+/test-results/
+/playwright-report/
+/coverage/
+/artifacts/
+/tests/**/artifacts/
+/tests/**/captures/
+/tests/**/screenshots/
+/tests/**/output/
+/tests/**/results/
+/tests/**/logs/
+/tests/**/reports/
+
+# NWN/API generated outputs
+/tests/nwn/api_runner/runs/
+/tests/nwn/api_runner/results/
+/tests/nwn/api_runner/screenshots/
+/tests/nwn/api_runner/uploads/
+/tests/nwn/_artifacts/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local runtime logs
+/nui-builder/debug-logs/*.ndjson
+/nui-builder/debug-logs/*.log
+/nui-builder/.vite-dev.log
+/nui-builder/.vite-dev.err.log
+/nui-builder/devserver.log
+/nui-builder/debug-logs/

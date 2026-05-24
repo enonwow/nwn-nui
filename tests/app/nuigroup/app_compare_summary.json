@@ -1,0 +1,11 @@
+﻿{
+    "generated_at":  "2026-05-24T15:53:39",
+    "mode":  "capture_only",
+    "test":  "nuigroup",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuigroup/app_nuigroup_bottom.png",
+                     "tests/app/nuigroup/app_nuigroup_mid.png",
+                     "tests/app/nuigroup/app_nuigroup_top.png"
+                 ]
+}

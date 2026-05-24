@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "title": "ITNWN Draw PolyLine Target",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "group",
+        "label": null,
+        "value": null,
+        "border": true,
+        "scrollbars": 0,
+        "width": 520.0,
+        "height": 420.0,
+        "draw_list_scissor": true,
+        "draw_list": [
+          {
+            "type": 0,
+            "enabled": true,
+            "color": {
+              "r": 170,
+              "g": 255,
+              "b": 140,
+              "a": 255
+            },
+            "fill": false,
+            "line_thickness": 3.0,
+            "points": [
+              170.0,
+              300.0,
+              250.0,
+              230.0,
+              330.0,
+              270.0,
+              420.0,
+              210.0
+            ],
+            "order": 1,
+            "render": 0,
+            "arrayBinds": false
+          }
+        ],
+        "children": [
+          {
+            "type": "spacer",
+            "label": null,
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 600,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

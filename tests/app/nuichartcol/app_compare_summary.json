@@ -1,0 +1,14 @@
+﻿{
+    "generated_at":  "2026-05-24T15:52:33",
+    "mode":  "capture_only",
+    "test":  "nuichartcol",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuichartcol/app_nuichartcol_base.png",
+                     "tests/app/nuichartcol/app_nuichartcol_hover_020.png",
+                     "tests/app/nuichartcol/app_nuichartcol_hover_035.png",
+                     "tests/app/nuichartcol/app_nuichartcol_hover_048.png",
+                     "tests/app/nuichartcol/app_nuichartcol_hover_055.png",
+                     "tests/app/nuichartcol/app_nuichartcol_hover_080.png"
+                 ]
+}

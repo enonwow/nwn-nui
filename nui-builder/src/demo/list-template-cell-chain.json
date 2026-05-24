@@ -1,0 +1,80 @@
+{
+  "order": 25,
+  "id": "list-template-cell-chain",
+  "name": "List Template Chain",
+  "description": "NuiList demo with static rows and template cells for the NuiList -> NuiListTemplateCell -> NuiListCell flow.",
+  "tags": ["list", "template", "cell", "static", "nuilist"],
+  "jui": {
+    "version": 1,
+    "title": "List Template Chain Demo",
+    "geometry": { "x": -1.0, "y": -1.0, "w": 700.0, "h": 390.0 },
+    "resizable": false,
+    "collapsed": false,
+    "closable": true,
+    "transparent": false,
+    "border": true,
+    "accepts_input": true,
+    "size_constraint": null,
+    "edge_constraint": null,
+    "font": "",
+    "root": {
+      "type": "col",
+      "children": [
+        {
+          "type": "row",
+          "children": [
+            { "type": "label", "value": "Quest", "width": 260, "text_halign": "NUI_HALIGN_LEFT", "text_valign": "NUI_VALIGN_MIDDLE" },
+            { "type": "label", "value": "Progress", "width": 170, "text_halign": "NUI_HALIGN_LEFT", "text_valign": "NUI_VALIGN_MIDDLE" },
+            { "type": "label", "value": "Action", "width": 110, "text_halign": "NUI_HALIGN_LEFT", "text_valign": "NUI_VALIGN_MIDDLE" }
+          ]
+        },
+        {
+          "type": "list",
+          "row_count": 3,
+          "row_height": 30.0,
+          "border": true,
+          "scrollbars": "NUI_SCROLLBARS_Y",
+          "row_template": [
+            [
+              {
+                "type": "label",
+                "value": "Quest Entry",
+                "text_halign": "NUI_HALIGN_LEFT",
+                "text_valign": "NUI_VALIGN_MIDDLE"
+              },
+              260.0,
+              true
+            ],
+            [
+              {
+                "type": "progress",
+                "value": 0.66
+              },
+              170.0,
+              true
+            ],
+            [
+              {
+                "type": "button",
+                "id": "btnQuestTrack",
+                "label": "Track"
+              },
+              110.0,
+              false
+            ]
+          ],
+          "width": 650.0,
+          "height": 250.0
+        },
+        {
+          "type": "row",
+          "children": [
+            { "type": "label", "value": "Select row and click Track." },
+            { "type": "spacer" },
+            { "type": "button", "id": "btnQuestRefresh", "label": "Refresh" }
+          ]
+        }
+      ]
+    }
+  }
+}

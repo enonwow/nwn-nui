@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "title": "NuiEncouraged Sync - Shared Button Pair",
+  "geometry": { "x": -1.0, "y": -1.0, "w": 820.0, "h": 300.0 },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": "",
+  "root": {
+    "type": "col",
+    "children": [
+      {
+        "type": "label",
+        "value": "Shared NuiId + encouraged bind on plain buttons: both should pulse together on click."
+      },
+      { "type": "spacer", "height": 10.0 },
+      {
+        "type": "row",
+        "children": [
+          { "type": "spacer" },
+          {
+            "type": "button",
+            "label": "Shared A",
+            "id": "encSharedCheck",
+            "encouraged": { "bind": "enc_check_shared", "number_flags": 0, "number_precision": 0, "text_flags": 0 },
+            "width": 240.0,
+            "height": 34.0
+          },
+          { "type": "spacer", "width": 12.0 },
+          {
+            "type": "button",
+            "label": "Shared B",
+            "id": "encSharedCheck",
+            "encouraged": { "bind": "enc_check_shared", "number_flags": 0, "number_precision": 0, "text_flags": 0 },
+            "width": 240.0,
+            "height": 34.0
+          },
+          { "type": "spacer" }
+        ]
+      },
+      { "type": "spacer", "height": 8.0 },
+      {
+        "type": "label",
+        "value": "Expected: click one -> both buttons get encouraged pulse due to shared ID."
+      }
+    ]
+  }
+}

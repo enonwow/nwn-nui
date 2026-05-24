@@ -1,0 +1,51 @@
+﻿{
+  "version": 1,
+  "title": "Custom P1 - TableToolbar",
+  "geometry": { "x": -1.0, "y": -1.0, "w": 760.0, "h": 220.0 },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": "",
+  "root": {
+    "type": "col",
+    "children": [
+      {
+        "type": "row",
+        "children": [
+          {
+            "type": "textedit",
+            "label": "Search quests...",
+            "value": { "bind": "tbl_search", "number_flags": 0, "number_precision": 0, "text_flags": 0 },
+            "max": 64,
+            "multiline": false,
+            "wordwrap": true,
+            "id": "tblSearch",
+            "width": 300.0
+          },
+          {
+            "type": "combo",
+            "elements": ["All", "Active", "Done"],
+            "value": { "bind": "tbl_filter", "number_flags": 0, "number_precision": 0, "text_flags": 0 },
+            "id": "tblFilter",
+            "width": 160.0
+          },
+          { "type": "button", "label": "Refresh", "id": "tblRefresh", "width": 120.0 },
+          { "type": "spacer" },
+          { "type": "label", "value": { "bind": "tbl_count_label", "number_flags": 0, "number_precision": 0, "text_flags": 0 }, "text_halign": "NUI_HALIGN_RIGHT", "text_valign": "NUI_VALIGN_MIDDLE", "width": 140.0 }
+        ]
+      },
+      { "type": "spacer", "height": 10.0 },
+      {
+        "type": "text",
+        "value": "Toolbar integration test for search + filter + refresh + count.",
+        "border": true,
+        "scrollbars": "NUI_SCROLLBARS_NONE"
+      }
+    ]
+  }
+}

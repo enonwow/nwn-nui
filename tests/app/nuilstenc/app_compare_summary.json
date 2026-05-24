@@ -1,0 +1,11 @@
+﻿{
+    "generated_at":  "2026-05-24T15:54:08",
+    "mode":  "capture_only",
+    "test":  "nuilstenc",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuilstenc/app_nuilstenc_sel_01.png",
+                     "tests/app/nuilstenc/app_nuilstenc_sel_03.png",
+                     "tests/app/nuilstenc/app_nuilstenc_sel_06.png"
+                 ]
+}

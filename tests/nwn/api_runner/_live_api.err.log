@@ -1,0 +1,29 @@
+C:\Projects\nwn-last-city\NUI\tests\nwn\api_runner\itnwn_api_server.py:1242: DeprecationWarning: ssl.TLSVersion.TLSv1 is deprecated
+  tls_context.minimum_version = ssl.TLSVersion.TLSv1
+----------------------------------------
+Exception occurred during processing of request from ('192.168.0.244', 55898)
+Traceback (most recent call last):
+  File "C:\Python312\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Python312\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Python312\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+  File "C:\Python312\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Python312\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Projects\nwn-last-city\NUI\tests\nwn\api_runner\itnwn_api_server.py", line 1048, in do_POST
+    self._send_json(
+  File "C:\Projects\nwn-last-city\NUI\tests\nwn\api_runner\itnwn_api_server.py", line 951, in _send_json
+    self.wfile.write(raw)
+  File "C:\Python312\Lib\socketserver.py", line 845, in write
+    self._sock.sendall(b)
+  File "C:\Python312\Lib\ssl.py", line 1210, in sendall
+    v = self.send(byte_view[count:])
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\ssl.py", line 1179, in send
+    return self._sslobj.write(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:2427)
+----------------------------------------

@@ -1,0 +1,67 @@
+{
+  "order": 30,
+  "id": "options-progress-panel",
+  "name": "Options + Progress",
+  "description": "Compact settings block with options/toggles and progress indicator.",
+  "tags": ["options", "toggles", "progress"],
+  "jui": {
+    "version": 1,
+    "title": "Setup Wizard",
+    "geometry": { "x": -1.0, "y": -1.0, "w": 620.0, "h": 340.0 },
+    "resizable": false,
+    "collapsed": false,
+    "closable": true,
+    "transparent": false,
+    "border": true,
+    "accepts_input": true,
+    "size_constraint": null,
+    "edge_constraint": null,
+    "font": "",
+    "root": {
+      "type": "col",
+      "children": [
+        {
+          "type": "row",
+          "children": [
+            { "type": "label", "value": "Mode", "width": 120 },
+            {
+              "type": "options",
+              "direction": "NUI_DIRECTION_HORIZONTAL",
+              "elements": ["Normal", "Hard", "Nightmare"],
+              "value": 0,
+              "width": 420
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "children": [
+            { "type": "label", "value": "Route", "width": 120 },
+            {
+              "type": "tabbar",
+              "direction": "NUI_DIRECTION_HORIZONTAL",
+              "elements": ["North", "East", "West"],
+              "value": 1,
+              "width": 420
+            }
+          ]
+        },
+        {
+          "type": "row",
+          "children": [
+            { "type": "label", "value": "Progress", "width": 120 },
+            { "type": "progress", "value": 0.45, "width": 420 }
+          ]
+        },
+        {
+          "type": "row",
+          "children": [
+            { "type": "spacer" },
+            { "type": "button", "id": "btnWizardBack", "label": "Back" },
+            { "type": "button", "id": "btnWizardNext", "label": "Next" }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+﻿{
+  "version": 1,
+  "title": "Custom P1 - ListCell Chain",
+  "geometry": { "x": -1.0, "y": -1.0, "w": 700.0, "h": 390.0 },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": "",
+  "root": {
+    "type": "col",
+    "children": [
+      {
+        "type": "row",
+        "children": [
+          { "type": "label", "value": "Quest", "text_halign": "NUI_HALIGN_LEFT", "text_valign": "NUI_VALIGN_MIDDLE", "width": 260.0 },
+          { "type": "label", "value": "Progress", "text_halign": "NUI_HALIGN_LEFT", "text_valign": "NUI_VALIGN_MIDDLE", "width": 170.0 },
+          { "type": "label", "value": "Action", "text_halign": "NUI_HALIGN_LEFT", "text_valign": "NUI_VALIGN_MIDDLE", "width": 110.0 }
+        ]
+      },
+      {
+        "type": "list",
+        "row_count": { "bind": "quest_row_count", "number_flags": 0, "number_precision": 0, "text_flags": 0 },
+        "row_height": 30.0,
+        "border": true,
+        "scrollbars": "NUI_SCROLLBARS_Y",
+        "width": 650.0,
+        "height": 250.0,
+        "row_template": [
+          [
+            { "type": "label", "value": { "bind": "quest_name", "number_flags": 0, "number_precision": 0, "text_flags": 0 }, "text_halign": "NUI_HALIGN_LEFT", "text_valign": "NUI_VALIGN_MIDDLE" },
+            260.0,
+            true
+          ],
+          [
+            { "type": "progress", "value": { "bind": "quest_progress", "number_flags": 0, "number_precision": 2, "text_flags": 0 } },
+            170.0,
+            true
+          ],
+          [
+            { "type": "button", "label": "Track", "id": "btnQuestTrack", "encouraged": { "bind": "quest_track_enc", "number_flags": 0, "number_precision": 0, "text_flags": 0 } },
+            110.0,
+            false
+          ]
+        ]
+      },
+      {
+        "type": "row",
+        "children": [
+          { "type": "label", "value": { "bind": "quest_footer_hint", "number_flags": 0, "number_precision": 0, "text_flags": 0 }, "text_halign": "NUI_HALIGN_LEFT", "text_valign": "NUI_VALIGN_MIDDLE" },
+          { "type": "spacer" },
+          { "type": "button", "label": "Refresh", "id": "btnQuestRefresh" }
+        ]
+      }
+    ]
+  }
+}

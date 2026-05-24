@@ -1,0 +1,53 @@
+﻿{
+  "order": 77,
+  "id": "draw-image",
+  "name": "DrawList Image",
+  "description": "NuiDrawListImage using bundled dm_moon_bg asset.",
+  "tags": ["drawlist", "image", "overlay", "hak"],
+  "assets": [
+    {
+      "file": "dm_moon_bg.png",
+      "resref": "dm_moon_bg"
+    }
+  ],
+  "jui": {
+    "version": 1,
+    "title": "DrawList Image Demo",
+    "geometry": { "x": -1.0, "y": -1.0, "w": 540.0, "h": 360.0 },
+    "resizable": false,
+    "collapsed": false,
+    "closable": true,
+    "transparent": false,
+    "border": true,
+    "accepts_input": true,
+    "size_constraint": null,
+    "edge_constraint": null,
+    "font": "",
+    "root": {
+      "type": "col",
+      "children": [
+        { "type": "label", "value": "NuiDrawListImage (ORDER_AFTER)", "margin": 6.0 },
+        {
+          "type": "spacer",
+          "width": 500.0,
+          "height": 260.0,
+          "draw_list_scissor": true,
+          "draw_list": [
+            {
+              "type": "NUI_DRAW_LIST_ITEM_TYPE_IMAGE",
+              "enabled": true,
+              "image": "dm_moon_bg",
+              "rect": { "x": 0.0, "y": 0.0, "w": 500.0, "h": 260.0 },
+              "image_aspect": "NUI_ASPECT_FILL",
+              "image_halign": "NUI_HALIGN_CENTER",
+              "image_valign": "NUI_VALIGN_MIDDLE",
+              "order": "NUI_DRAW_LIST_ITEM_ORDER_AFTER",
+              "render": "NUI_DRAW_LIST_ITEM_RENDER_ALWAYS",
+              "arrayBinds": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

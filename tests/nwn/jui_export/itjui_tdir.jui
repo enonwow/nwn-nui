@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "title": "ITNWN Draw ImgRegion Target",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "group",
+        "label": null,
+        "value": null,
+        "border": true,
+        "scrollbars": 0,
+        "width": 520.0,
+        "height": 420.0,
+        "draw_list_scissor": true,
+        "draw_list": [
+          {
+            "type": 5,
+            "enabled": true,
+            "color": null,
+            "fill": null,
+            "line_thickness": null,
+            "image": "ir_follow",
+            "image_aspect": 0,
+            "image_halign": 0,
+            "image_valign": 0,
+            "rect": {
+              "x": 220.0,
+              "y": 150.0,
+              "w": 120.0,
+              "h": 120.0
+            },
+            "image_region": {
+              "x": 0.0,
+              "y": 0.0,
+              "w": 32.0,
+              "h": 32.0
+            },
+            "order": 1,
+            "render": 0,
+            "arrayBinds": false
+          }
+        ],
+        "children": [
+          {
+            "type": "spacer",
+            "label": null,
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 600,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

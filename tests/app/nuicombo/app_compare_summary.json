@@ -1,0 +1,11 @@
+﻿{
+    "generated_at":  "2026-05-24T15:52:47",
+    "mode":  "capture_only",
+    "test":  "nuicombo",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuicombo/app_nuicombo_closed.png",
+                     "tests/app/nuicombo/app_nuicombo_open.png",
+                     "tests/app/nuicombo/app_nuicombo_selected_c.png"
+                 ]
+}

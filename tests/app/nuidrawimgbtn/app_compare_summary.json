@@ -1,0 +1,11 @@
+﻿{
+    "generated_at":  "2026-05-24T15:53:15",
+    "mode":  "capture_only",
+    "test":  "nuidrawimgbtn",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuidrawimgbtn/app_nuidrawimgbtn_base_click.png",
+                     "tests/app/nuidrawimgbtn/app_nuidrawimgbtn_idle.png",
+                     "tests/app/nuidrawimgbtn/app_nuidrawimgbtn_overlay_click.png"
+                 ]
+}

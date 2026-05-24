@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "title": "ITNWN JUI Golden A",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "label",
+        "value": "__sig_20260520",
+        "id": "sig_20260520"
+      },
+      {
+        "type": "label",
+        "value": "JUI target loaded from HAK (A).",
+        "id": "lbl_jui_target_info"
+      },
+      {
+        "type": "button",
+        "label": "Golden Button A",
+        "id": "btn_jui_target_a"
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 420,
+    "h": 190
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

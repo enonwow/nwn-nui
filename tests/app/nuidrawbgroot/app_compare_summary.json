@@ -1,0 +1,10 @@
+﻿{
+    "generated_at":  "2026-05-24T15:53:11",
+    "mode":  "capture_only",
+    "test":  "nuidrawbgroot",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuidrawbgroot/app_nuidrawbgroot_idle.png",
+                     "tests/app/nuidrawbgroot/app_nuidrawbgroot_ping_click.png"
+                 ]
+}

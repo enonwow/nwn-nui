@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "title": "Script Export Test",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "label",
+        "value": "Checks generated NWScript launcher path.",
+        "id": "lbl_info"
+      },
+      {
+        "type": "button",
+        "label": "Run Script Test",
+        "id": "btn_run_script"
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 520,
+    "h": 180
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

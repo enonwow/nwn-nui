@@ -1,0 +1,40 @@
+name: nui-builder-ci
+
+on:
+  push:
+    paths:
+      - "nui-builder/**"
+      - ".github/workflows/nui-builder-ci.yml"
+  pull_request:
+    paths:
+      - "nui-builder/**"
+      - ".github/workflows/nui-builder-ci.yml"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: nui-builder
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: nui-builder/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npx tsc --noEmit
+
+      - name: Run tests
+        run: npm run test
+
+      - name: Build
+        run: npm run build

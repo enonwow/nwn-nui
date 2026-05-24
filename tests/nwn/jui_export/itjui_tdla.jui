@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "title": "ITNWN Draw Arc Target",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "group",
+        "label": null,
+        "value": null,
+        "border": true,
+        "scrollbars": 0,
+        "width": 520.0,
+        "height": 420.0,
+        "draw_list_scissor": true,
+        "draw_list": [
+          {
+            "type": 3,
+            "enabled": true,
+            "color": {
+              "r": 255,
+              "g": 220,
+              "b": 120,
+              "a": 255
+            },
+            "fill": false,
+            "line_thickness": 4.0,
+            "c": {
+              "x": 260.0,
+              "y": 220.0
+            },
+            "radius": 120.0,
+            "amin": 0.0,
+            "amax": 3.14,
+            "order": 1,
+            "render": 0,
+            "arrayBinds": false
+          }
+        ],
+        "children": [
+          {
+            "type": "spacer",
+            "label": null,
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 600,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

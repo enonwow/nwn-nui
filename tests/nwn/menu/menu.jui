@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "title": "Integration Menu",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "label",
+        "value": "NWN tests/nwn launcher menu.",
+        "id": "lbl_menu_info"
+      },
+      {
+        "type": "row",
+        "label": null,
+        "value": null,
+        "children": [
+          {
+            "type": "button",
+            "label": "Script Export Test",
+            "id": "btn_menu_script"
+          },
+          {
+            "type": "button",
+            "label": "JUI Export Test",
+            "id": "btn_menu_jui"
+          }
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 560,
+    "h": 210
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "title": "NuiEncouraged Sync - Unique IDs / Shared Bind",
+  "geometry": { "x": -1.0, "y": -1.0, "w": 860.0, "h": 280.0 },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": "",
+  "root": {
+    "type": "col",
+    "children": [
+      {
+        "type": "label",
+        "value": "Unique NuiId, but one shared encouraged bind. Useful to isolate bind-level coupling from id-level routing."
+      },
+      { "type": "spacer", "height": 10.0 },
+      {
+        "type": "row",
+        "children": [
+          { "type": "spacer" },
+          {
+            "type": "button",
+            "label": "Left Unique ID",
+            "id": "encSharedBindLeft",
+            "encouraged": { "bind": "enc_shared_bind", "number_flags": 0, "number_precision": 0, "text_flags": 0 },
+            "width": 220.0,
+            "height": 34.0
+          },
+          { "type": "spacer", "width": 12.0 },
+          {
+            "type": "button",
+            "label": "Right Unique ID",
+            "id": "encSharedBindRight",
+            "encouraged": { "bind": "enc_shared_bind", "number_flags": 0, "number_precision": 0, "text_flags": 0 },
+            "width": 220.0,
+            "height": 34.0
+          },
+          { "type": "spacer" }
+        ]
+      },
+      { "type": "spacer", "height": 8.0 },
+      {
+        "type": "label",
+        "value": "Expected: state is shared by bind (both reflect one bool), while event routes remain per unique NuiId."
+      }
+    ]
+  }
+}

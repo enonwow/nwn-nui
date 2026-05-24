@@ -1,0 +1,9 @@
+﻿{
+    "generated_at":  "2026-05-23T02:00:36",
+    "mode":  "capture_only",
+    "test":  "script_export",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/nwn/script_export/app_script_export.png"
+                 ]
+}

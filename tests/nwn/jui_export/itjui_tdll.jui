@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "title": "ITNWN Draw Line Target",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "group",
+        "label": null,
+        "value": null,
+        "border": true,
+        "scrollbars": 0,
+        "width": 520.0,
+        "height": 420.0,
+        "draw_list_scissor": true,
+        "draw_list": [
+          {
+            "type": 6,
+            "enabled": true,
+            "color": {
+              "r": 235,
+              "g": 180,
+              "b": 80,
+              "a": 255
+            },
+            "fill": null,
+            "line_thickness": 4.0,
+            "a": {
+              "x": 110.0,
+              "y": 210.0
+            },
+            "b": {
+              "x": 410.0,
+              "y": 210.0
+            },
+            "order": 1,
+            "render": 0,
+            "arrayBinds": false
+          }
+        ],
+        "children": [
+          {
+            "type": "spacer",
+            "label": null,
+            "value": null
+          }
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 600,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

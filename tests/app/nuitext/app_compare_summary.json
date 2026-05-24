@@ -1,0 +1,9 @@
+﻿{
+    "generated_at":  "2026-05-24T15:55:18",
+    "mode":  "capture_only",
+    "test":  "nuitext",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuitext/app_nuitext.png"
+                 ]
+}

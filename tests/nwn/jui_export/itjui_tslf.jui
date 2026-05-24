@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "title": "ITNWN SliderFloat Target",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "sliderf",
+        "label": null,
+        "value": 0.35,
+        "min": 0.0,
+        "max": 1.0,
+        "step": 0.05,
+        "width": 280.0,
+        "id": "slf_baseline"
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 600,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

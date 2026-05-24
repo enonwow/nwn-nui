@@ -1,0 +1,47 @@
+{
+  "order": 60,
+  "id": "moonlit-bg-only",
+  "name": "Moonlit Background",
+  "description": "Borderless draw-list backdrop window with generated moonlit ruins art auto-added to HAK queue.",
+  "tags": ["background", "image", "hak", "overlay"],
+  "assets": [
+    {
+      "file": "dm_moon_bg.png",
+      "resref": "dm_moon_bg"
+    }
+  ],
+  "jui": {
+    "version": 1,
+    "title": false,
+    "geometry": { "x": -1.0, "y": -1.0, "w": 480.0, "h": 320.0 },
+    "resizable": false,
+    "collapsed": false,
+    "closable": false,
+    "transparent": true,
+    "border": false,
+    "accepts_input": false,
+    "size_constraint": null,
+    "edge_constraint": null,
+    "font": "",
+    "root": {
+      "type": "col",
+      "width": 480,
+      "height": 320,
+      "draw_list_scissor": false,
+      "draw_list": [
+        {
+          "type": "NUI_DRAW_LIST_ITEM_TYPE_IMAGE",
+          "enabled": true,
+          "image": "dm_moon_bg",
+          "rect": { "x": 0.0, "y": 0.0, "w": 480.0, "h": 320.0 },
+          "image_aspect": "NUI_ASPECT_FILL",
+          "image_halign": "NUI_HALIGN_CENTER",
+          "image_valign": "NUI_VALIGN_MIDDLE",
+          "order": "NUI_DRAW_LIST_ITEM_ORDER_BEFORE",
+          "render": "NUI_DRAW_LIST_ITEM_RENDER_ALWAYS"
+        }
+      ],
+      "children": []
+    }
+  }
+}

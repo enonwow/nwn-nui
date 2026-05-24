@@ -1,0 +1,382 @@
+{
+  "tests": [
+    {
+      "case_id": "menu_window",
+      "script_resref": "nuitst_menu2",
+      "expected_window_id": "ITNWN_MENU2_WIN",
+      "capture_test": "menu",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_export_launcher",
+      "script_resref": "nuitst_juiopn",
+      "expected_window_id": "ITNWN_JUI_WIN",
+      "capture_test": "jui_export",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "script_export_launcher",
+      "script_resref": "nuitst_scrrun",
+      "expected_window_id": "ITNWN_SCR_WIN",
+      "capture_test": "script_export",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_gld001a",
+      "script_resref": "nuitst_j01",
+      "expected_window_id": "ITJUI_GLD001A",
+      "capture_test": "capture_cases/cap_gld001a",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tbim",
+      "script_resref": "nuitst_j02",
+      "expected_window_id": "ITJUI_TBIM",
+      "capture_test": "capture_cases/cap_tbim",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tbse",
+      "script_resref": "nuitst_j03",
+      "expected_window_id": "ITJUI_TBSE",
+      "capture_test": "capture_cases/cap_tbse",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tbtn",
+      "script_resref": "nuitst_j04",
+      "expected_window_id": "ITJUI_TBTN",
+      "capture_test": "capture_cases/cap_tbtn",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tcha",
+      "script_resref": "nuitst_j05",
+      "expected_window_id": "ITJUI_TCHA",
+      "capture_test": "capture_cases/cap_tcha",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tchk",
+      "script_resref": "nuitst_j06",
+      "expected_window_id": "ITJUI_TCHK",
+      "capture_test": "capture_cases/cap_tchk",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tclr",
+      "script_resref": "nuitst_j07",
+      "expected_window_id": "ITJUI_TCLR",
+      "capture_test": "capture_cases/cap_tclr",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tcmb",
+      "script_resref": "nuitst_j08",
+      "expected_window_id": "ITJUI_TCMB",
+      "capture_test": "capture_cases/cap_tcmb",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tdir",
+      "script_resref": "nuitst_j09",
+      "expected_window_id": "ITJUI_TDIR",
+      "capture_test": "capture_cases/cap_tdir",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tdla",
+      "script_resref": "nuitst_j10",
+      "expected_window_id": "ITJUI_TDLA",
+      "capture_test": "capture_cases/cap_tdla",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tdlc",
+      "script_resref": "nuitst_j11",
+      "expected_window_id": "ITJUI_TDLC",
+      "capture_test": "capture_cases/cap_tdlc",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tdli",
+      "script_resref": "nuitst_j12",
+      "expected_window_id": "ITJUI_TDLI",
+      "capture_test": "capture_cases/cap_tdli",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tdll",
+      "script_resref": "nuitst_j13",
+      "expected_window_id": "ITJUI_TDLL",
+      "capture_test": "capture_cases/cap_tdll",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tdlp",
+      "script_resref": "nuitst_j14",
+      "expected_window_id": "ITJUI_TDLP",
+      "capture_test": "capture_cases/cap_tdlp",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tdlr",
+      "script_resref": "nuitst_j15",
+      "expected_window_id": "ITJUI_TDLR",
+      "capture_test": "capture_cases/cap_tdlr",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tdlt",
+      "script_resref": "nuitst_j16",
+      "expected_window_id": "ITJUI_TDLT",
+      "capture_test": "capture_cases/cap_tdlt",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tdlv",
+      "script_resref": "nuitst_j17",
+      "expected_window_id": "ITJUI_TDLV",
+      "capture_test": "capture_cases/cap_tdlv",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_timg",
+      "script_resref": "nuitst_j18",
+      "expected_window_id": "ITJUI_TIMG",
+      "capture_test": "capture_cases/cap_timg",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tlbl",
+      "script_resref": "nuitst_j19",
+      "expected_window_id": "ITJUI_TLBL",
+      "capture_test": "capture_cases/cap_tlbl",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_topt",
+      "script_resref": "nuitst_j20",
+      "expected_window_id": "ITJUI_TOPT",
+      "capture_test": "capture_cases/cap_topt",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tprg",
+      "script_resref": "nuitst_j21",
+      "expected_window_id": "ITJUI_TPRG",
+      "capture_test": "capture_cases/cap_tprg",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tsld",
+      "script_resref": "nuitst_j22",
+      "expected_window_id": "ITJUI_TSLD",
+      "capture_test": "capture_cases/cap_tsld",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_tslf",
+      "script_resref": "nuitst_j23",
+      "expected_window_id": "ITJUI_TSLF",
+      "capture_test": "capture_cases/cap_tslf",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_ttog",
+      "script_resref": "nuitst_j24",
+      "expected_window_id": "ITJUI_TTOG",
+      "capture_test": "capture_cases/cap_ttog",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_ttxe",
+      "script_resref": "nuitst_j25",
+      "expected_window_id": "ITJUI_TTXE",
+      "capture_test": "capture_cases/cap_ttxe",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "jui_ttxt",
+      "script_resref": "nuitst_j26",
+      "expected_window_id": "ITJUI_TTXT",
+      "capture_test": "capture_cases/cap_ttxt",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tlbl",
+      "script_resref": "nuitst_s01",
+      "expected_window_id": "ITNWN_TLBL",
+      "capture_test": "capture_cases/cap_tlbl",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tbtn",
+      "script_resref": "nuitst_s02",
+      "expected_window_id": "ITNWN_TBTN",
+      "capture_test": "capture_cases/cap_tbtn",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_topt",
+      "script_resref": "nuitst_s03",
+      "expected_window_id": "ITNWN_TOPT",
+      "capture_test": "capture_cases/cap_topt",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tchk",
+      "script_resref": "nuitst_s04",
+      "expected_window_id": "ITNWN_TCHK",
+      "capture_test": "capture_cases/cap_tchk",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tsld",
+      "script_resref": "nuitst_s05",
+      "expected_window_id": "ITNWN_TSLD",
+      "capture_test": "capture_cases/cap_tsld",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tprg",
+      "script_resref": "nuitst_s06",
+      "expected_window_id": "ITNWN_TPRG",
+      "capture_test": "capture_cases/cap_tprg",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_ttxe",
+      "script_resref": "nuitst_s07",
+      "expected_window_id": "ITNWN_TTXE",
+      "capture_test": "capture_cases/cap_ttxe",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tbim",
+      "script_resref": "nuitst_s08",
+      "expected_window_id": "ITNWN_TBIM",
+      "capture_test": "capture_cases/cap_tbim",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tbse",
+      "script_resref": "nuitst_s09",
+      "expected_window_id": "ITNWN_TBSE",
+      "capture_test": "capture_cases/cap_tbse",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tclr",
+      "script_resref": "nuitst_s10",
+      "expected_window_id": "ITNWN_TCLR",
+      "capture_test": "capture_cases/cap_tclr",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tcmb",
+      "script_resref": "nuitst_s11",
+      "expected_window_id": "ITNWN_TCMB",
+      "capture_test": "capture_cases/cap_tcmb",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_timg",
+      "script_resref": "nuitst_s12",
+      "expected_window_id": "ITNWN_TIMG",
+      "capture_test": "capture_cases/cap_timg",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tslf",
+      "script_resref": "nuitst_s13",
+      "expected_window_id": "ITNWN_TSLF",
+      "capture_test": "capture_cases/cap_tslf",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_ttxt",
+      "script_resref": "nuitst_s14",
+      "expected_window_id": "ITNWN_TTXT",
+      "capture_test": "capture_cases/cap_ttxt",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_ttog",
+      "script_resref": "nuitst_s15",
+      "expected_window_id": "ITNWN_TTOG",
+      "capture_test": "capture_cases/cap_ttog",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tcha",
+      "script_resref": "nuitst_s16",
+      "expected_window_id": "ITNWN_TCHA",
+      "capture_test": "capture_cases/cap_tcha",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tdla",
+      "script_resref": "nuitst_s17",
+      "expected_window_id": "ITNWN_TDLA",
+      "capture_test": "capture_cases/cap_tdla",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tdlc",
+      "script_resref": "nuitst_s18",
+      "expected_window_id": "ITNWN_TDLC",
+      "capture_test": "capture_cases/cap_tdlc",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tdlv",
+      "script_resref": "nuitst_s19",
+      "expected_window_id": "ITNWN_TDLV",
+      "capture_test": "capture_cases/cap_tdlv",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tdli",
+      "script_resref": "nuitst_s20",
+      "expected_window_id": "ITNWN_TDLI",
+      "capture_test": "capture_cases/cap_tdli",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tdir",
+      "script_resref": "nuitst_s21",
+      "expected_window_id": "ITNWN_TDIR",
+      "capture_test": "capture_cases/cap_tdir",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tdll",
+      "script_resref": "nuitst_s22",
+      "expected_window_id": "ITNWN_TDLL",
+      "capture_test": "capture_cases/cap_tdll",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tdlp",
+      "script_resref": "nuitst_s23",
+      "expected_window_id": "ITNWN_TDLP",
+      "capture_test": "capture_cases/cap_tdlp",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tdlr",
+      "script_resref": "nuitst_s24",
+      "expected_window_id": "ITNWN_TDLR",
+      "capture_test": "capture_cases/cap_tdlr",
+      "delay_ms": 1500
+    },
+    {
+      "case_id": "scr_tdlt",
+      "script_resref": "nuitst_s25",
+      "expected_window_id": "ITNWN_TDLT",
+      "capture_test": "capture_cases/cap_tdlt",
+      "delay_ms": 1500
+    }
+  ]
+}

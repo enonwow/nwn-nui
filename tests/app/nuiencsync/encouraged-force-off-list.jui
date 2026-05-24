@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "title": "Encouraged Force OFF - List Row",
+  "geometry": { "x": -1.0, "y": -1.0, "w": 860.0, "h": 360.0 },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": "",
+  "root": {
+    "type": "col",
+    "children": [
+      {
+        "type": "label",
+        "value": "List row toggle: click row N -> ON, click same row N again -> OFF."
+      },
+      { "type": "spacer", "height": 8.0 },
+      {
+        "type": "list",
+        "row_count": 5,
+        "row_height": 34.0,
+        "border": true,
+        "scrollbars": "NUI_SCROLLBARS_Y",
+        "row_template": [
+          [
+            { "type": "label", "value": "Quest Entry", "text_halign": "NUI_HALIGN_LEFT", "text_valign": "NUI_VALIGN_MIDDLE" },
+            280.0,
+            true
+          ],
+          [
+            {
+              "type": "button",
+              "label": "Select",
+              "id": "encForceOffListRow",
+              "encouraged": { "bind": "enc_force_off_rows", "number_flags": 0, "number_precision": 0, "text_flags": 0 },
+              "height": 28.0
+            },
+            140.0,
+            false
+          ]
+        ],
+        "width": 500.0,
+        "height": 230.0
+      },
+      { "type": "spacer", "height": 8.0 },
+      {
+        "type": "label",
+        "value": "Expected: active row can be explicitly turned OFF by clicking it again."
+      }
+    ]
+  }
+}

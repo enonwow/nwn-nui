@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "title": "ITNWN ButtonImage Target",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "button_image",
+        "label": "ir_follow",
+        "width": 96.0,
+        "height": 96.0,
+        "id": "bim_baseline"
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 600,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

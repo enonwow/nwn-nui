@@ -1,0 +1,9 @@
+﻿{
+    "generated_at":  "2026-05-24T15:52:50",
+    "mode":  "capture_only",
+    "test":  "nuidemo_moon",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuidemo_moon/app_nuidemo_moon.png"
+                 ]
+}

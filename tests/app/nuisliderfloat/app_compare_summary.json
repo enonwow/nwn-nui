@@ -1,0 +1,11 @@
+﻿{
+    "generated_at":  "2026-05-24T15:55:10",
+    "mode":  "capture_only",
+    "test":  "nuisliderfloat",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuisliderfloat/app_nuisliderfloat_max.png",
+                     "tests/app/nuisliderfloat/app_nuisliderfloat_mid.png",
+                     "tests/app/nuisliderfloat/app_nuisliderfloat_min.png"
+                 ]
+}

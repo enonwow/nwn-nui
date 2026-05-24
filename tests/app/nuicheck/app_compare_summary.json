@@ -1,0 +1,10 @@
+﻿{
+    "generated_at":  "2026-05-24T15:52:38",
+    "mode":  "capture_only",
+    "test":  "nuicheck",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuicheck/app_nuicheck_checked.png",
+                     "tests/app/nuicheck/app_nuicheck_unchecked.png"
+                 ]
+}

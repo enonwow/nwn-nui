@@ -1,0 +1,11 @@
+﻿{
+    "generated_at":  "2026-05-24T15:54:03",
+    "mode":  "capture_only",
+    "test":  "nuilistbtn",
+    "note":  "No Aurora references in this folder. Saved app screenshots only.",
+    "captures":  [
+                     "tests/app/nuilistbtn/app_nuilistbtn_bottom.png",
+                     "tests/app/nuilistbtn/app_nuilistbtn_mid.png",
+                     "tests/app/nuilistbtn/app_nuilistbtn_top.png"
+                 ]
+}

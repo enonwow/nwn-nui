@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "title": "ITNWN ColorPicker Target",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "color_picker",
+        "label": null,
+        "value": {
+          "r": 96,
+          "g": 128,
+          "b": 255,
+          "a": 255
+        },
+        "width": 220.0,
+        "height": 180.0,
+        "id": "clr_baseline"
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 600,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

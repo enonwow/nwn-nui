@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "title": "ITNWN Chart Target",
+  "root": {
+    "type": "col",
+    "label": null,
+    "value": null,
+    "children": [
+      {
+        "type": "chart",
+        "label": null,
+        "value": [
+          {
+            "type": 0,
+            "legend": "Series A",
+            "color": {
+              "r": 90,
+              "g": 180,
+              "b": 255,
+              "a": 255
+            },
+            "data": [
+              0.1,
+              0.3,
+              0.2,
+              0.6,
+              0.45,
+              0.8
+            ]
+          }
+        ],
+        "width": 320.0,
+        "height": 180.0,
+        "id": "cha_baseline"
+      }
+    ]
+  },
+  "geometry": {
+    "x": -1,
+    "y": -1,
+    "w": 600,
+    "h": 600
+  },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": ""
+}

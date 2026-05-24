@@ -1,0 +1,30 @@
+{
+  "name": "nui-builder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:contracts": "vitest run src/lib/jui.contract.test.js",
+    "image:compare": "python tools/image_similarity.py",
+    "image:compare:set": "python tools/compare_screenshot_sets.py",
+    "image:capture:app": "node tools/capture_app_screenshots.mjs",
+    "image:compare:e2e": "node tools/capture_compare_e2e.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "playwright": "^1.60.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.5"
+  }
+}

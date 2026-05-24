@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "title": "NuiId Sync - ListCell IDs",
+  "geometry": { "x": -1.0, "y": -1.0, "w": 780.0, "h": 350.0 },
+  "resizable": false,
+  "collapsed": false,
+  "closable": true,
+  "transparent": false,
+  "border": true,
+  "accepts_input": true,
+  "size_constraint": null,
+  "edge_constraint": null,
+  "font": "",
+  "root": {
+    "type": "col",
+    "children": [
+      {
+        "type": "label",
+        "value": "List template test: Track A buttons share one NuiId; Track B buttons share another NuiId."
+      },
+      { "type": "spacer", "height": 8.0 },
+      {
+        "type": "list",
+        "row_count": 4,
+        "row_height": 32.0,
+        "border": true,
+        "scrollbars": "NUI_SCROLLBARS_Y",
+        "row_template": [
+          [
+            { "type": "button", "label": "Track A", "id": "btnListTrackA", "height": 28.0 },
+            160.0,
+            false
+          ],
+          [
+            { "type": "button", "label": "Track B", "id": "btnListTrackB", "height": 28.0 },
+            160.0,
+            false
+          ],
+          [
+            { "type": "label", "value": "Quest Entry", "text_halign": "NUI_HALIGN_LEFT", "text_valign": "NUI_VALIGN_MIDDLE" },
+            250.0,
+            true
+          ]
+        ],
+        "width": 620.0,
+        "height": 220.0
+      },
+      { "type": "spacer", "height": 8.0 },
+      {
+        "type": "label",
+        "value": "Expected: click Track A -> all A react; click Track B -> all B react; A and B are independent groups."
+      }
+    ]
+  }
+}
