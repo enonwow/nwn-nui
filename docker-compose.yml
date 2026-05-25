@@ -1,0 +1,59 @@
+name: nwn-nui
+
+services:
+  ui:
+    build:
+      context: ./nui-builder
+      dockerfile: Dockerfile.dev
+    container_name: nwn-nui-ui
+    ports:
+      - "${NUI_UI_PORT:-5180}:5180"
+    environment:
+      CHOKIDAR_USEPOLLING: "${CHOKIDAR_USEPOLLING:-true}"
+      WATCHPACK_POLLING: "${WATCHPACK_POLLING:-true}"
+    volumes:
+      - ./nui-builder:/app
+      - nwn_nui_ui_node_modules:/app/node_modules
+    command: npm run dev -- --host 0.0.0.0 --port 5180
+
+  ui-preview:
+    profiles: ["preview"]
+    build:
+      context: ./nui-builder
+      dockerfile: Dockerfile
+      args:
+        VITE_BASE_PATH: "${VITE_BASE_PATH:-/}"
+    container_name: nwn-nui-ui-preview
+    ports:
+      - "${NUI_UI_PREVIEW_PORT:-4173}:4173"
+
+  api-runner:
+    profiles: ["nwn"]
+    build:
+      context: ./tests/nwn/api_runner
+      dockerfile: Dockerfile
+    container_name: nwn-nui-api-runner
+    working_dir: /workspace
+    ports:
+      - "${ITNWN_API_PORT:-51871}:51871"
+    environment:
+      ITNWN_API_HOST: 0.0.0.0
+      ITNWN_API_PORT: "${ITNWN_API_PORT:-51871}"
+      ITNWN_MODULE_PATH: /nwn/temp0
+      ITNWN_NWSCRIPT_DIR: /nwn/NWScript
+      ITNWN_TLS_CERT: /workspace/tests/nwn/api_runner/certs/itnwn_api_localhost.crt
+      ITNWN_TLS_KEY: /workspace/tests/nwn/api_runner/certs/itnwn_api_localhost.key
+    volumes:
+      - ./:/workspace
+      - ${ITNWN_MODULE_PATH_HOST:-./.docker/mock-temp0}:/nwn/temp0
+      - ${ITNWN_NWSCRIPT_DIR_HOST:-./.docker/mock-nwscript}:/nwn/NWScript
+    command: >
+      python tests/nwn/api_runner/itnwn_api_server.py
+      --host 0.0.0.0
+      --port 51871
+      --skip-nss-sync
+      --skip-runner-compile
+      --disable-app-capture
+
+volumes:
+  nwn_nui_ui_node_modules:

@@ -1,50 +1,15 @@
-﻿# tests/app
+# App Test Fixtures
 
-Integration fixture scripts (`.nss`) indexed for validation:
+`tests/app` contains feature-oriented fixture cases used by the builder and parity checks.
 
-- nuiaccinput/nuiaccinput.nss
-- nuiaspect/nuiaspect.nss
-- nuiaspmod/nuiaspmod.nss
-- nuibutton/nuibutton.nss
-- nuibuttonimage/nuibuttonimage.nss
-- nuibuttonselect/nuibuttonselect.nss
-- nuichart/nuichart.nss
-- nuichartcol/nuichartcol.nss
-- nuicheck/nuicheck.nss
-- nuicolorpicker/nuicolorpicker.nss
-- nuicombo/nuicombo.nss
-- nuidemo_moon/nuidemo_moon.nss
-- nuidistip/nuidistip.nss
-- nuidraw_hover/nuidraw_hover.nss
-- nuidraw_order/nuidraw_order.nss
-- nuidraw_primitives/nuidraw_primitiv.nss
-- nuidrawbgroot/nuidrawbgroot.nss
-- nuidrawimgbtn/nuidrawimgbtn.nss
-- nuiduelui/itduel_sw.nss
-- nuiduelui/itduel_swev.nss
-- nuiedgecons/nuiedgecons.nss
-- nuiencourage/nuiencourage.nss
-- nuigeombind/nuigeombind.nss
-- nuigroup/nuigroup.nss
-- nuiimage/nuiimage.nss
-- nuiimage_hak/nuiimage_hak.nss
-- nuiimgregion/nuiimgregion.nss
-- nuilabel/nuilabel.nss
-- nuilist/nuilist.nss
-- nuilistbtn/nuilistbtn.nss
-- nuilstenc/nuilstenc.nss
-- nuimargin/nuimargin.nss
-- nuioptions/nuioptions.nss
-- nuipadding/nuipadding.nss
-- nuiprogcolor/nuiprogcolor.nss
-- nuiprogress/nuiprogress.nss
-- nuisizecons/nuisizecons.nss
-- nuislider/nuislider.nss
-- nuisliderfloat/nuisliderfloat.nss
-- nuiswaplay/nuiswaplay.nss
-- nuitest_menu/nuitest_menu.nss
-- nuitext/nuitext.nss
-- nuitextedit/nuitextedit.nss
-- nuitoggles/nuitoggles.nss
-- nuitooltip/nuitooltip.nss
-- nuivisible/nuivisible.nss
+## Typical case contents
+- `<case>.jui` expected layout payload
+- `<case>.nss` source test script
+- optional `<case>_ev.nss` event script
+- optional screenshots and compare summaries
+
+## Tooling
+See `tests/app/_tools/README.md`.
+
+## Reporting
+- `tests/app/TEST_RESULTS.md`

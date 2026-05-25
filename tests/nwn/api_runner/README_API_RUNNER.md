@@ -136,6 +136,17 @@ Custom port:
 python tests/nwn/api_runner/itnwn_api_server.py --port 51901 --tls-cert "C:\path\server.crt" --tls-key "C:\path\server.key"
 ```
 
+## Docker option (optional)
+
+From repository root:
+
+```powershell
+docker compose --profile nwn up --build api-runner
+```
+
+By default this profile runs in safe mode (no temp0 sync / no compile / no capture).  
+For real NWN runtime integration, configure `.env.docker` with host paths and run the server directly or adjust container command.
+
 Or via env:
 
 ```powershell

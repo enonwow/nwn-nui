@@ -1,4 +1,4 @@
-﻿name: nui-builder-pages
+name: nui-builder-pages
 
 on:
   push:
@@ -37,6 +37,8 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Install dependencies
         run: npm ci

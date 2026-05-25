@@ -48,3 +48,12 @@ Thumbs.db
 /nui-builder/.vite-dev.err.log
 /nui-builder/devserver.log
 /nui-builder/debug-logs/
+
+# Docker local overrides
+.env.docker
+
+# Docker runtime artifacts
+.docker/mock-temp0/*
+.docker/mock-nwscript/*
+!.docker/mock-temp0/.gitkeep
+!.docker/mock-nwscript/.gitkeep
