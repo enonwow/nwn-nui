@@ -1,4 +1,4 @@
-name: nui-builder-pages
+﻿name: nui-builder-pages
 
 on:
   push:
@@ -24,6 +24,8 @@ jobs:
     defaults:
       run:
         working-directory: nui-builder
+    outputs:
+      pages_ready: ${{ steps.pages_ready.outputs.ready }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,9 +38,19 @@ jobs:
           cache-dependency-path: nui-builder/package-lock.json
 
       - name: Setup Pages
+        id: pages
+        continue-on-error: true
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
+
+      - name: Mark Pages readiness
+        id: pages_ready
+        if: always()
+        run: |
+          if [ "${{ steps.pages.outcome }}" = "success" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Install dependencies
         run: npm ci
@@ -59,6 +71,7 @@ jobs:
           path: nui-builder/dist
 
   deploy:
+    if: needs.build.outputs.pages_ready == 'true'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
