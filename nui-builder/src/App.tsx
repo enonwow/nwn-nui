@@ -26188,7 +26188,7 @@ export default function App() {
                 toggleNodeCollapsed(node.id);
               }}
             >
-              {hasChildren ? (isCollapsed ? "â–¸" : "â–ľ") : "â€˘"}
+              {hasChildren ? (isCollapsed ? "+" : "-") : "."}
             </span>
             {asset?.previewUrl ? (
               isVideoAsset ? (
@@ -31372,5 +31372,6 @@ export default function App() {
     </div>
   );
 }
+
 
 
